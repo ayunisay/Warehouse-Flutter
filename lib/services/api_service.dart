@@ -4,7 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class ApiService {
   static const baseUrl = "http://10.0.2.2:8000/api"; // Android emulator
-  // kalau device asli pakai IP wifi kamu, contoh:
+  // kalau device asli pakai IP wifi, contoh:
   // static const baseUrl = "http://192.168.1.10:8000/api";
 
   // GET laporan stok

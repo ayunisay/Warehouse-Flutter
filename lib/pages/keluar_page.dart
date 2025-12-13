@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../services/api_service.dart';
+import '../services/api_service.dart'; //api
 
 class KeluarPage extends StatefulWidget {
   @override
@@ -183,7 +183,7 @@ class _KeluarPageState extends State<KeluarPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Header dengan nama barang dan qty
+                // Header nama barang dan qty
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -275,7 +275,6 @@ class _KeluarPageState extends State<KeluarPage> {
 
                 SizedBox(height: 12),
 
-                // Info tambahan - TANGGAL dan KETERANGAN SEJAJAR
                 Row(
                   children: [
                     // Tanggal (kiri)
@@ -290,7 +289,6 @@ class _KeluarPageState extends State<KeluarPage> {
 
                     SizedBox(width: 12),
 
-                    // Keterangan/Sumber (kanan)
                     if (item["keterangan"] != null &&
                         item["keterangan"].toString().isNotEmpty)
                       Expanded(

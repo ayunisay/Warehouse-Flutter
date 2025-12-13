@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../services/api_service.dart';
+import '../services/api_service.dart'; //api
 
 class StokPage extends StatefulWidget {
   @override
@@ -275,7 +275,6 @@ class _StokPage extends State<StokPage> {
 
                 SizedBox(height: 12),
 
-                // Info tambahan - TANGGAL dan KETERANGAN SEJAJAR
                 Row(
                   children: [
                     // Tanggal (kiri)
