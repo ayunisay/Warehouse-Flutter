@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:csv/csv.dart';
 import 'dart:io';
 import 'package:path_provider/path_provider.dart';
-import '../services/api_service.dart'; // tambahkan ini!
+import '../services/api_service.dart'; //api
 
 Future<void> exportCSV(List<dynamic> data) async {
   List<List<dynamic>> rows = [
@@ -79,13 +79,13 @@ class ExportPage extends StatelessWidget {
                     ),
                   ],
                 ),
-              ], // ← TAMBAHKAN INI (penutup children Row)
-            ), // ← TAMBAHKAN INI (penutup Column header)
-          ), // ← TAMBAHKAN INI (penutup Container header)
+              ],
+            ),
+          ),
 
-          SizedBox(height: 30), // Tambah jarak antara header dan button
+          SizedBox(height: 30),
 
-          // Button 1 - Laporan Stok
+          //laporan stok
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15),
             child: SizedBox(
@@ -138,7 +138,7 @@ class ExportPage extends StatelessWidget {
             ),
           ),
 
-          // Button 2 - Laporan Barang Keluar
+          //laporan barang keluar
           Padding(
             padding: const EdgeInsets.only(top: 20, left: 15, right: 15),
             child: SizedBox(
@@ -191,6 +191,7 @@ class ExportPage extends StatelessWidget {
             ),
           ),
 
+          //laporan permintaan barang
           Padding(
             padding: const EdgeInsets.only(top: 20, left: 15, right: 15),
             child: SizedBox(
@@ -243,6 +244,7 @@ class ExportPage extends StatelessWidget {
             ),
           ),
 
+          //laporan karusakan
           Padding(
             padding: const EdgeInsets.only(top: 20, left: 15, right: 15),
             child: SizedBox(
@@ -294,8 +296,8 @@ class ExportPage extends StatelessWidget {
               ),
             ),
           ),
-        ], // ← Penutup children Column utama
-      ), // ← Penutup body Scaffold
+        ],
+      ),
     );
   }
 }

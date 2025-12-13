@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:projekuas/pages/export_page.dart';
 import 'package:projekuas/pages/keluar_page.dart';
 import 'package:projekuas/pages/stok_page.dart';
-import 'package:projekuas/pages/home_page.dart';
 import 'package:projekuas/widgets/color.dart';
 
 class Home extends StatefulWidget {
